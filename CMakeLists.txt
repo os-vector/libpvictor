@@ -19,7 +19,7 @@ target_link_libraries(pvictor atomic)
 
 # examples
 
-add_executable(voff ${PROJECT_SOURCE_DIR}/examples/voff/voff.cpp)
+add_executable(voff ${PROJECT_SOURCE_DIR}/utils/voff/voff.cpp)
 target_link_libraries(voff pvictor)
 
 install(TARGETS pvictor
