@@ -28,4 +28,4 @@ install(TARGETS pvictor
 install(TARGETS voff
         DESTINATION bin)
 
-install(DIRECTORY include/ DESTINATION include)
+#install(DIRECTORY include/ DESTINATION include)
