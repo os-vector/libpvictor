@@ -173,7 +173,6 @@ void spine_demo() {
 }
 
 int body_init() {
-    signal(SIGINT, spine_demo_exit);
     spine_handle = spine_init();
     memset(&spine_data, 0, sizeof(spine_data));
     memset(spine_ver, 0, sizeof(spine_ver));

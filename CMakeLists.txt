@@ -17,7 +17,15 @@ add_library(pvictor SHARED ${SOURCES})
 
 target_link_libraries(pvictor atomic)
 
+# examples
+
+add_executable(voff ${PROJECT_SOURCE_DIR}/examples/voff/voff.cpp)
+target_link_libraries(voff pvictor)
+
 install(TARGETS pvictor
         LIBRARY DESTINATION lib)
+
+install(TARGETS voff
+        DESTINATION bin)
 
 install(DIRECTORY include/ DESTINATION include)
