@@ -4,6 +4,7 @@ project(libpvictor VERSION 0.1 LANGUAGES C CXX)
 
 add_compile_options(-Wno-narrowing)
 add_compile_options(-Wno-int-to-pointer-cast)
+add_compile_options(-Wno-unused-command-line-argument)
 
 include_directories(${PROJECT_SOURCE_DIR}/include)
 

@@ -373,9 +373,9 @@ static int _led_set_brightness(const int brightness, const char* led)
     error_return(app_DEVICE_OPEN_ERROR, "Failed to open backlight %s: %d\n", led, errno);
   }
 
-  char buf[3];
-  snprintf(buf,3,"%02d\n",brightness);
-  (void)write(fd, buf, 3);
+  char buf[4];
+  snprintf(buf,4,"%02d\n",brightness);
+  (void)write(fd, buf, 4);
   close(fd);
 
   return 0;
